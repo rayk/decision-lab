@@ -1,2 +1,2 @@
-# decsion_lab
+# Decsion Lab
 Decision Pad Lab Repository

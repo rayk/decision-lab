@@ -1,3 +1,8 @@
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
 # changes file
 *.changes
 *.chg
@@ -6,9 +11,11 @@
 *.image
 *.img7
 *.img
+*.image
 
 # Pharo Smalltalk Debug log file
 PharoDebug.log
+meta-inf.ston
 
 # Squeak Smalltalk Debug log file
 SqueakDebug.log

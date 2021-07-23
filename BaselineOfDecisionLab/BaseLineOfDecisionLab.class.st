@@ -9,9 +9,11 @@ Class {
 
 { #category : #baselines }
 BaseLineOfDecisionLab >> baseline: spec [
+
 	<baseline>
-	spec 
-		for: #common
-		do: [ spec package:'Decision-Lab' ]
-	
+	spec for: #common do: [ "Packages"
+		spec
+			package: 'Decision-Lab-Core';
+			package: 'Decision-Lab-Test';
+			package: 'Decision-Lab-Examples' ]
 ]

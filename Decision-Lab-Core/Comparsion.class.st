@@ -5,8 +5,8 @@ Class {
 	#name : #Comparsion,
 	#superclass : #Object,
 	#instVars : [
-		'left',
-		'right',
+		'subject',
+		'against',
 		'judgement',
 		'scale',
 		'criterion',
@@ -17,7 +17,19 @@ Class {
 
 { #category : #constructor }
 Comparsion class >> subject: anFirstAlternative with: anSecondAlternative using: aCriterion by: aContributorProfile [ 
-	^ self new left: anFirstAlternative ; right: anSecondAlternative ; criterion: aCriterion; contributor: aContributorProfile.
+	^ self new subject: anFirstAlternative ; against: anSecondAlternative ; criterion: aCriterion; contributor: aContributorProfile.
+]
+
+{ #category : #accessing }
+Comparsion >> against [
+	^ against.
+]
+
+{ #category : #accessing }
+Comparsion >> against: anAlternative [
+	"I contian a reference to the `Alternative` the subject of this comparsion is being made againt."
+	
+	against := anAlternative .
 ]
 
 { #category : #accessing }
@@ -56,30 +68,6 @@ Comparsion >> judgement [
 ]
 
 { #category : #accessing }
-Comparsion >> left [
-
-	^ left
-]
-
-{ #category : #accessing }
-Comparsion >> left: anObject [
-
-	left := anObject
-]
-
-{ #category : #accessing }
-Comparsion >> right [
-
-	^ right
-]
-
-{ #category : #accessing }
-Comparsion >> right: anObject [
-
-	right := anObject
-]
-
-{ #category : #accessing }
 Comparsion >> scale [
 
 	^ scale
@@ -89,4 +77,18 @@ Comparsion >> scale [
 Comparsion >> scale: anObject [
 
 	scale := anObject
+]
+
+{ #category : #accessing }
+Comparsion >> subject [
+
+	"I contain a reference to the object that is being comapred, constrasted or judged."
+
+	^ subject
+]
+
+{ #category : #accessing }
+Comparsion >> subject: anObject [
+	
+	subject := anObject .
 ]

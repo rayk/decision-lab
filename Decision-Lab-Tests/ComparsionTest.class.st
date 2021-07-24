@@ -15,8 +15,8 @@ ComparsionTest >> testCreationUsingConstructor [
 	criterion := Criterion labeledAs: 'Criterion Alpha'.
 	compare := Comparsion subject: comparing with: comparedTo using: criterion  by: contributor.
 	self assert: compare judgement equals: 0. 
-	self assert: compare left equals: comparing.
-	self assert: compare right equals: comparedTo.
+	self assert: compare subject equals: comparing.
+	self assert: compare against equals: comparedTo.
 	self assert: compare criterion equals: criterion.
 	self assert: compare contributor equals: contributor .
 	self assert: compare scale isNil .

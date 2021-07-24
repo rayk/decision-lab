@@ -24,7 +24,8 @@ Criterion class >> labeledAs: aString [
 Criterion >> addSubCriterion: aCriterion [
 	"Adds a child criterion this this creation."
 			
-	children add: aCriterion 
+	children add: aCriterion.
+	aCriterion join: self.
 ]
 
 { #category : #accessing }
@@ -49,7 +50,14 @@ Criterion >> hasSubCriterion [
 Criterion >> initialize [
 
 	weight := 0.0.
-	children := Bag new.
+	children := OrderedCollection new.
+]
+
+{ #category : #splitjoin }
+Criterion >> join: aParentCriterion [
+	"comment stating purpose of instance-side method"
+	
+	parent := aParentCriterion.
 ]
 
 { #category : #accessing }
@@ -62,6 +70,12 @@ Criterion >> label [
 Criterion >> label: anObject [
 
 	label := anObject
+]
+
+{ #category : #accessing }
+Criterion >> parent [
+	"I answer with my parent criterion if I am child, otherwise I am Nil."
+	^ parent.
 ]
 
 { #category : #accessing }

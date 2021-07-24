@@ -9,3 +9,18 @@ Class {
 	],
 	#category : #'Decision-Lab-Core'
 }
+
+{ #category : #constructor }
+Alternative class >> labeledAs: aString [ 
+	^ self new label: aString. 
+]
+
+{ #category : #accessing }
+Alternative >> label [
+	^ label
+]
+
+{ #category : #accessing }
+Alternative >> label: aString [ 
+	label := aString
+]

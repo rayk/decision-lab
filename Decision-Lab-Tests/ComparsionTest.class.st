@@ -1,7 +1,7 @@
 Class {
 	#name : #ComparsionTest,
 	#superclass : #TestCase,
-	#category : #'Decision-Lab-Tests'
+	#category : #'Decision-Lab-Tests-Units'
 }
 
 { #category : #tests }

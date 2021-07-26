@@ -5,7 +5,8 @@ Class {
 	#name : #Alternative,
 	#superclass : #Object,
 	#instVars : [
-		'label'
+		'label',
+		'description'
 	],
 	#category : #'Decision-Lab-Core'
 }
@@ -13,6 +14,18 @@ Class {
 { #category : #constructor }
 Alternative class >> labeledAs: aString [ 
 	^ self new label: aString. 
+]
+
+{ #category : #accessing }
+Alternative >> description [
+	^ description.
+]
+
+{ #category : #accessing }
+Alternative >> description: aStringDescription [
+
+	"A general description of this alternative."
+	description := aStringDescription.
 ]
 
 { #category : #accessing }

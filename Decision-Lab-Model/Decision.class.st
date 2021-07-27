@@ -25,27 +25,27 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'label',
-		'description'
+		'about'
 	],
 	#category : #'Decision-Lab-Model-Entities'
 }
 
 { #category : #accessing }
-Decision >> description [
-	^ self maLazyInstVarUsing: self descriptionDescription
+Decision >> about [
+	^ self maLazyInstVarUsing: self aboutDescription
 ]
 
 { #category : #accessing }
-Decision >> description: aBlockClosure [
-	description := aBlockClosure
+Decision >> about: aTime [
+	about := aTime
 ]
 
 { #category : #'magritte-accessing' }
-Decision >> descriptionDescription [
+Decision >> aboutDescription [
 	<magritteDescription>
-	^ MABlockDescription new
-		name: #description;
-		accessor: #description;
+	^ MAStringDescription new
+		name: #about;
+		accessor: #about;
 		priority: 200;
 		yourself
 ]
@@ -53,7 +53,7 @@ Decision >> descriptionDescription [
 { #category : #initialization }
 Decision >> initialize [ 
 	label := String new.
-	description := String new.
+	about := String new.
 ]
 
 { #category : #accessing }

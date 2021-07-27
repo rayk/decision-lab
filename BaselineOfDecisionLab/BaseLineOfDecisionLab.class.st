@@ -14,7 +14,7 @@ BaseLineOfDecisionLab >> baseline: spec [
 		for: #common
 		do: [ "Packages"
 			spec
-				package: 'Decision-Lab-App';
+				package: 'Decision-Lab-World';
 				package: 'Decision-Lab-Core';
 				package: 'Decision-Lab-Model';
 				package: 'Decision-Lab-Test';

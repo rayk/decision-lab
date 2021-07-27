@@ -23,16 +23,6 @@ Decision >> commenced: aDate [
 	commenced := aDate
 ]
 
-{ #category : #'magritte-accessing' }
-Decision >> commencedDescription [
-	<magritteDescription>
-	^ MADateDescription new
-		name: #commenced;
-		accessor: #commenced;
-		comment: 'The date upon which this decision was commenced.';
-		yourself
-]
-
 { #category : #accessing }
 Decision >> description [
 	^ description

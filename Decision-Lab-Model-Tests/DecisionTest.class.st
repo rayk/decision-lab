@@ -9,8 +9,6 @@ Class {
 
 { #category : #tests }
 DecisionTest >> testInstanceCreation [
-	| result |
-	result := Decision new.
-	self assert: result isNotNil.
-	self assert: result label isNotNil.
+	
+	self assert: Decision new isNotNil .
 ]

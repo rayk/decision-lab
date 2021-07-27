@@ -35,5 +35,8 @@ DomainObjectInteractionExample >> gettingInfoAboutTheDomainObject [
 		label: 'Friendly Name for the decision';
 		about: 'More information about the decision to help the user under it.'.
 		
+	self assert: decision label isNotNil .
+	self assert: decision about isNotNil.	
+		
 	^ decision magritteDescription .
 ]

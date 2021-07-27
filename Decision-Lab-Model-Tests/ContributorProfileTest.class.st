@@ -1,7 +1,7 @@
 Class {
 	#name : #ContributorProfileTest,
 	#superclass : #TestCase,
-	#category : #'Decision-Lab-Tests-Units'
+	#category : #'Decision-Lab-Model-Tests-Entities'
 }
 
 { #category : #tests }

@@ -40,6 +40,40 @@
 					"__type" : "textStyle"
 				},
 				"string" : "About the Decision Lab Application."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T14:19:33.621814+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T14:19:56.423087+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Z3z36XSEDQCYojQlAKbWfg=="
+				},
+				"code" : "| decision |\rdecision := Decision new."
 			}
 		]
 	},

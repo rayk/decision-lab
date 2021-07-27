@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-07-27T10:59:28.430607+10:00"
+						"dateAndTimeString" : "2021-07-27T10:59:37.165998+10:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Abou"
+				"string" : "About the Decision Lab Application."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T14:19:33.621814+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T14:19:38.628817+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Z3z36XSEDQCYojQlAKbWfg=="
+				},
+				"code" : "| decision"
 			}
 		]
 	},

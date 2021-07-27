@@ -2,13 +2,13 @@
 I describe the architecture & dependencies of the Decision Lab application. 
 "
 Class {
-	#name : #BaseLineOfDecisionLab,
+	#name : #BaselineOfDecisionLab,
 	#superclass : #BaselineOf,
 	#category : #BaselineOfDecisionLab
 }
 
 { #category : #baselines }
-BaseLineOfDecisionLab >> baseline: spec [
+BaselineOfDecisionLab >> baseline: spec [
 	<baseline>
 	spec
 		for: #common

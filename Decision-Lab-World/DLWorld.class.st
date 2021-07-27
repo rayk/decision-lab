@@ -21,7 +21,7 @@ Internal Representation and Key Implementation Points.
     Implementation Points
 "
 Class {
-	#name : #Application,
+	#name : #DLWorld,
 	#superclass : #Object,
-	#category : #'Decision-Lab-App'
+	#category : #'Decision-Lab-World'
 }
